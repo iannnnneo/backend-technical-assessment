@@ -2,10 +2,12 @@ package com.aquariux.technical.assessment.trade.controller;
 
 import com.aquariux.technical.assessment.trade.dto.request.TradeRequest;
 import com.aquariux.technical.assessment.trade.dto.response.TradeResponse;
+import com.aquariux.technical.assessment.trade.exception.InsufficientBalanceException;
 import com.aquariux.technical.assessment.trade.service.TradeServiceInterface;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
